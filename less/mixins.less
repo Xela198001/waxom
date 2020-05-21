@@ -1,0 +1,16 @@
+.section__page {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.padding-page (@top: 50px, @right: 50px, @bottom:50px, @left: 50px) {
+  padding: @top @right @bottom @left;
+}
+
+.flexbox (@flexd: row; @align: center) {
+  display: flex;
+  flex-direction: @flexd;
+  align-items: @align;
+}

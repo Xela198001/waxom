@@ -1,12 +1,12 @@
 body {
-  width: 1920px;
+  width: @widthBody;
   padding: 0;
   margin: 0 auto;
 }
 
 .header {
   .section__page;
-  .padding-page(35px, 350px, 35px, 350px);
+  .padding-page(40px, 374px, 0px, 376px);
   min-height: 1024px;
   background-image: url(../img/bg_header_img.jpg);
   background-size: cover;
@@ -15,6 +15,13 @@ body {
   color: @colorWhite;
   font-family: MontserratUL;
 
+  &__wrap {
+    // width: @widthSite;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
   &__nav {
     .flexbox();
     min-width: 100px;
@@ -22,22 +29,24 @@ body {
     &__logo {
       width: 20%;
       position: relative;
-      margin: 0 15px 0 0;
+      margin: 0 100px 0 0;
+      padding: 2px 0 0 0;
       font-family: Raleway-Regular;
       font-size: 34px;
+      line-height: 52px;
 
       &:before {
         content: "";
         display: block;
         background-image: url(../img/logos.png);
-        width: 45px;
-        height: 45px;
+        width: 62px;
+        height: 56px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
         position: absolute;
-        top: -5px;
-        left: -52px;
+        top: 0;
+        left: -68px;
       }
     }
 
@@ -45,6 +54,7 @@ body {
       .flexbox();
       list-style: none;
       padding: 0;
+      margin: 0;
 
       &__item {
         margin: 0 15px;
@@ -60,7 +70,7 @@ body {
         &__link {
           color: @colorWhite;
           text-decoration: none;
-          font-size: 16px;
+          font-size: 14px;
 
           &:hover {
             color: #804040;
@@ -76,27 +86,44 @@ body {
 
   &__slider {
     .flexbox (column);
-    justify-content: center;
+    min-height: 853px;
+    margin: 20px 0 0 0;
+    position: relative;
+
+    &:before {
+      content: "<";
+    font-size: 133px;
+    display: block;
+    width: 40px;
+    min-height: 73px;
+    position: absolute;
+    left: -222px;
+    top: 315px;
+    border: 1px solid #fff;
+    }
 
     &__sub__title {
       font-family: Raleway;
       font-weight: 500;
       font-size: 36px;
-      margin: 0;
+      margin: -66px 0 0 0;
     }
 
     &__title {
       font-family: Raleway;
       font-weight: 800;
       font-size: 52px;
-      margin: 0;
+      margin: 5px 0 0 0;
     }
 
     &__text {
       font-family: Montserrat;
       font-weight: 300;
       font-size: 16px;
-      margin: 0;
+      margin: 12px 300px 0;
+      word-break: break-all;
+      line-height: 23px;
+      text-align: center;
     }
 
     &__btn {
@@ -105,6 +132,7 @@ body {
       background-color: #998675;
       border-radius: 4px;
       border: none;
+      margin: 51px 0 0 0;
 
       &__link {
         color: #fff;
@@ -117,6 +145,46 @@ body {
         min-height: 100%;
         display: block;
         padding: 18px 0;
+      }
+    }
+
+    &__pagination {
+      width: 100%;
+      min-height: 25px;
+      position: absolute;
+      bottom: -26px;
+
+      &__list {
+        list-style: none;
+        min-height: 15px;
+        margin: 0;
+        padding: 0;
+        .flexbox();
+
+        &__item {
+          margin: 0 0 0 7px;
+          width: 15px;
+          min-height: 11px;
+
+          &__link {
+            display: block;
+            background-color: #fff;
+            opacity: 0.5;
+            width: 11px;
+            min-height: 11px;
+            border-radius: 50%;
+            margin: auto;
+
+            &.link__active {
+              width: 15px;
+              min-height: 15px;
+              background: none;
+              border: 2px solid #ffffff80;
+              box-sizing: border-box;
+              margin: 0;
+            }
+          }
+        }
       }
     }
   }

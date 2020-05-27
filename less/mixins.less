@@ -9,8 +9,9 @@
   padding: @top @right @bottom @left;
 }
 
-.flexbox (@flexd: row; @align: center) {
+.flexbox (@flexd: row; @jcontent: center; @align: center) {
   display: flex;
   flex-direction: @flexd;
+  justify-content: @jcontent;
   align-items: @align;
 }

@@ -579,8 +579,11 @@ path {
   background: linear-gradient(90deg, #211b19 35%, #4e3427 70%);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  flex-flow: row wrap;
+  align-content: center;
+  position: relative;
 }
 .main__wp-theme__title {
   font-family: Raleway;
@@ -589,6 +592,7 @@ path {
   text-align: left;
   color: #ffffff;
   margin: 0 0 8px 0;
+  width: 75%;
 }
 .main__wp-theme__title span {
   color: #c7b299;
@@ -600,6 +604,7 @@ path {
   text-align: left;
   color: #615855;
   margin: 0;
+  width: 75%;
 }
 .main__wp-theme__link {
   width: 170px;
@@ -618,4 +623,5 @@ path {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+  margin: -30px 0 auto auto;
 }

@@ -1,0 +1,54 @@
+.main {
+  &__wp-theme {
+    .section__page();
+    .padding-page(0, 376px, 0, 378px);
+    width: @widthBody;
+    height: 150px;
+    background: linear-gradient(
+      90deg,
+      rgba(33, 27, 25, 1) 35%,
+      rgba(78, 52, 39, 1) 70%
+    );
+    .flexbox(row, space-between, center);
+
+    &__title {
+      font-family: Raleway;
+      font-size: 28px;
+      text-align: left;
+      color: #ffffff;
+      margin: 0 0 8px 0;
+
+      span {
+        color: #c7b299;
+      }
+    }
+
+    &__text {
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 300;
+      text-align: left;
+      color: #615855;
+      margin: 0;
+    }
+
+    &__link {
+      width: 170px;
+      min-height: 50px;
+      border-radius: 3px;
+      box-shadow: inset 0px -3px 0 0 #736357;
+      background-color: #998675;
+      box-sizing: border-box;
+      padding: 13px 0 0 0;
+      font-family: Raleway; 
+      font-size: 14px;
+      font-weight: 800;
+      text-decoration: none;
+      text-transform: uppercase;
+      line-height: 1.64;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+}

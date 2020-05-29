@@ -585,6 +585,7 @@ path {
 .main__wp-theme__title {
   font-family: Raleway;
   font-size: 28px;
+  font-weight: normal;
   text-align: left;
   color: #ffffff;
   margin: 0 0 8px 0;

@@ -22,8 +22,17 @@
     &__item {
       .flexbox();
       width: 268px;
-      border: 1px solid #000;
+      box-sizing: border-box;
+      margin: 0 16px;
       position: relative;
+
+      &:first-child {
+        margin: 0 16px 0 0;
+      }
+
+      &:last-child {
+        margin: 0 0 0 16px;
+      }
 
       &__wrap {
         text-align: center;
@@ -34,7 +43,7 @@
         }
 
         &__title {
-          font-family: Ralewey;
+          font-family: Raleway;
           font-weight: 600;
           font-style: 22px;
           color: @fontColor;
@@ -50,7 +59,7 @@
         }
 
         &__text {
-          font-family: Ralewey;
+          font-family: Raleway;
           font-weight: 300;
           font-style: 14px;
           line-height: 24px;

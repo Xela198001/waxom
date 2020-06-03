@@ -476,8 +476,15 @@ body {
   justify-content: center;
   align-items: center;
   width: 268px;
-  border: 1px solid #000;
+  box-sizing: border-box;
+  margin: 0 16px;
   position: relative;
+}
+.main__services__item:first-child {
+  margin: 0 16px 0 0;
+}
+.main__services__item:last-child {
+  margin: 0 0 0 16px;
 }
 .main__services__item__wrap {
   text-align: center;
@@ -487,7 +494,7 @@ body {
   fill: #fff;
 }
 .main__services__item__wrap__title {
-  font-family: Ralewey;
+  font-family: Raleway;
   font-weight: 600;
   font-style: 22px;
   color: #8c8c8c;
@@ -501,7 +508,7 @@ body {
   left: 0;
 }
 .main__services__item__wrap__text {
-  font-family: Ralewey;
+  font-family: Raleway;
   font-weight: 300;
   font-style: 14px;
   line-height: 24px;
@@ -624,6 +631,72 @@ path {
   text-align: center;
   color: #ffffff;
   margin: -30px 0 auto auto;
+}
+.main__projects {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 81px 374px 80px 376px;
+  width: 1920px;
+  min-height: 1160px;
+}
+.main__projects__title {
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #555555;
+}
+.main__projects__text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  text-align: center;
+  color: #8c8c8c;
+}
+.main__projects__wrap {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.main__projects__wrap__card {
+  width: 370px;
+  min-height: 337px;
+  box-sizing: border-box;
+}
+.main__projects__wrap__card:nth-child(3n+2) {
+  margin: 0  30px 30px;
+}
+.main__projects__wrap__card:nth-last-child(1) {
+  margin: 0 0 30px;
+}
+.main__projects__wrap__card__img {
+  width: 100%;
+  background-color: #8c8c8c;
+}
+.main__projects__wrap__card__body {
+  width: 100%;
+  height: 100px;
+  background-color: #fbfaf8;
+  padding: 15px;
+  margin: -5px 0 0 0;
+  box-sizing: border-box;
+}
+.main__projects__wrap__card__body__title {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+  color: #c7b299;
+  margin: 0;
+}
+.main__projects__wrap__card__body__text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  color: #d1d1d1;
 }
 .main__video {
   width: 100%;

@@ -1,0 +1,56 @@
+.main {
+  &__ideas {
+    .section__page();
+    .padding-page(77px, 344px, 0, 346px);
+    width: @widthBody;
+    min-height: 700px;
+    background-color: #fbfaf8;
+    margin: 0 auto;
+    box-sizing: border-box;
+    .flexbox(column, space-between, center);
+
+    &__title {
+      font-family: Raleway;
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+      color: #555555;
+      margin: 0 0 16px 0;
+    }
+
+    &__text {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: center;
+      color: #8c8c8c;
+      margin: 0 0 28px 0;
+      padding: 0 235px;
+    }
+
+    &__screenshots {
+      position: relative;
+      width: 100%;
+      min-height: 485px;
+
+      &__screenshot {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+
+        &:nth-child(1) {
+          left: 0;
+        }
+
+        &:nth-child(2) {
+          right: 0;
+        }
+
+        &:nth-child(3) {
+          left: 18.9%;
+        }
+      }
+    }
+  }
+}

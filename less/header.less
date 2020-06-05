@@ -1,7 +1,7 @@
 body {
   width: @widthBody;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .header {
@@ -74,9 +74,6 @@ body {
           margin: 0 0 0 14px;
         }
 
-        &:nth-last-child(2) {
-          margin: 0 15px 0 48px;
-        }
         &:nth-last-child(4) {
           margin: 0 14px 0 16px;
         }
@@ -95,13 +92,33 @@ body {
           }
 
           &:hover {
-            color: #804040;
+            color: #c7b299;
           }
 
           &:active {
             color: #aa5555;
           }
         }
+      }
+    }
+
+    &__cart__link {
+      margin: 0 15px 0 48px;
+    }
+
+    &__cart__link, &__search__link {
+      color: #fff;
+
+      &__svg {
+        fill: currentColor;
+      }
+
+      &:hover {
+        color: #c7b299;
+      }
+
+      &:active {
+        color: #fff;
       }
     }
   }

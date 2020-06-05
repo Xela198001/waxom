@@ -697,3 +697,195 @@ body {
 .main__wp-theme__link:active {
   background-color: #998675;
 }
+.main__projects {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 81px 374px 80px 376px;
+  width: 1920px;
+  min-height: 1160px;
+}
+.main__projects__title {
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #555555;
+}
+.main__projects__text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  text-align: center;
+  color: #8c8c8c;
+}
+.main__projects__wrap {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.main__projects__wrap__card {
+  width: 370px;
+  min-height: 337px;
+  box-sizing: border-box;
+}
+.main__projects__wrap__card:nth-child(3n+2) {
+  margin: 0  30px 30px;
+}
+.main__projects__wrap__card:nth-last-child(1) {
+  margin: 0 0 30px;
+}
+.main__projects__wrap__card__img {
+  width: 100%;
+  background-color: #8c8c8c;
+}
+.main__projects__wrap__card__body {
+  width: 100%;
+  height: 100px;
+  background-color: #fbfaf8;
+  padding: 15px;
+  margin: -5px 0 0 0;
+  box-sizing: border-box;
+}
+.main__projects__wrap__card__body__title {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+  color: #c7b299;
+  margin: 0;
+}
+.main__projects__wrap__card__body__text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  color: #d1d1d1;
+}
+.main__video {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 0 0 0;
+  width: 1920px;
+  min-height: 695px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main__mobile {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 50px 376px 50px 378px;
+  width: 1920px;
+  min-height: 695px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main__mobile__img {
+  align-self: flex-end;
+  margin: 0 29px -50px 0;
+}
+.main__mobile__wrap__title {
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  color: #555555;
+  margin: 0 0 38px 0;
+}
+.main__mobile__wrap__text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  text-align: left;
+  color: #8c8c8c;
+  margin: 0 0 44px 0;
+}
+.main__mobile__wrap__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main__mobile__wrap__list__item {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2;
+  text-align: left;
+  color: #8c8c8c;
+  padding: 0 0 0 100px;
+  position: relative;
+}
+.main__mobile__wrap__list__item:before {
+  content: ">";
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  width: 21px;
+  height: 21px;
+  background-color: #c7b299;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  left: 71px;
+}
+.main__partners {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 140px 376px 139px 378px;
+  width: 1920px;
+  background-image: url(../img/bg-partners.jpg);
+  background-size: cover;
+  background-color: #1111119e;
+  background-blend-mode: multiply;
+  position: relative;
+}
+.main__partners__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main__partners__list__item {
+  width: 210px;
+  min-height: 210px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+.main__partners__list__item:nth-child(1) {
+  padding: 0 45px 0 30px;
+  background-image: url(../img/partners/barber.png);
+}
+.main__partners__list__item:nth-child(2) {
+  padding: 0 45px;
+  background-image: url(../img/partners/delicious.png);
+}
+.main__partners__list__item:nth-child(3) {
+  padding: 0 45px;
+  background-image: url(../img/partners/designers.png);
+}
+.main__partners__list__item:nth-child(4) {
+  padding: 0 30px 0 45px;
+  background-image: url(../img/partners/royal.png);
+}

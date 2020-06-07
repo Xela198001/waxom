@@ -1,0 +1,205 @@
+.main {
+  &__posts {
+    .section__page();
+    .padding-page(82px, 374px, 80px, 376px);
+    .flexbox(row, center, flex-start);
+    flex-wrap: wrap;
+
+    &__title {
+      .h2();
+      width: 100%;
+      margin: 0 0 30px;
+    }
+
+    &__text {
+      .text();
+      width: 100%;
+      margin: 0 0 40px;
+      padding: 0 165px;
+    }
+
+    &__card {
+      width: 370px;
+      min-height: 395px;
+      box-sizing: border-box;
+      position: relative;
+      margin: 0 15px 30px;
+
+      &:nth-child(3) {
+        margin: 0 15px 30px 0;
+      }
+
+      &:nth-child(3n + 2) {
+        margin: 0 0 30px 15px;
+      }
+
+      &:nth-last-child(3) {
+        margin: 0 0 30px 15px;
+      }
+
+      &__number {
+        display: block;
+        width: 50px;
+        min-height: 35px;
+        background-color: #363636;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 35px;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 3px 3px 0 0;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+
+      &__month {
+        display: block;
+        width: 50px;
+        min-height: 25px;
+        background-color: #252525;
+        font-family: 'Montserrat', 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 25px;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 0 0 3px 3px;
+        position: absolute;
+        top: 55px;
+        left: 20px;
+      }
+
+      &__img {
+        width: 100%;
+        background-color: #8c8c8c;
+      }
+
+      &__body {
+        width: 100%;
+        height: 175px;
+        background-color: #fbfaf8;
+        padding: 30px 29px;
+        margin: -5px 0 0 0;
+        box-sizing: border-box;
+        position: relative;
+
+        &__title {
+          .h3();
+          margin: 0 0 19px;
+        }
+
+        &__text {
+          .textCardBody();
+          margin: 0 0 27px;
+        }
+
+        &__link {
+          font-family: "Montserrat", sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.43;
+          letter-spacing: normal;
+          text-align: left;
+          text-decoration: none;
+          text-transform: capitalize;
+          color: #c7b299;
+
+          &:after {
+            content: "\25B6";
+            font-family: "Montserrat", sans-serif;
+            margin: 0 0 0 5px;
+            font-size: 14px;
+          }
+        }
+      }
+
+      &:hover &__img {
+        filter: brightness(40%);
+      }
+
+      &:hover &__body {
+        background-color: #362f2d;
+      }
+
+      &:hover &__body__title {
+        color: #c7b299;
+      }
+
+      &:hover &__body__text {
+        color: #fff;
+      }
+
+      &:hover &__link {
+        color: #c7b299;
+      }
+    }
+
+    &__card:hover &__card__number {
+        z-index: 4;
+        background-color: #c7b299;
+      }
+
+      &__card:hover &__card__month {
+        z-index: 4;
+        background-color: #a48d72;
+      }
+
+    &__arrow {
+      .flexbox();
+      width: 100%;
+      min-height: 22px;
+
+      &__prev,
+      &__next {
+        width: 22px;
+        min-height: 22px;
+        border: 2px solid #d1d1d1;
+        border-radius: 50%;
+        text-decoration: none;
+        font-family: Montserrat;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 14px;
+        text-align: center;
+        line-height: 22px;
+        color: #d1d1d1;
+      }
+
+      &__prev {
+        margin: 0 4px 0 0;
+      }
+
+      &__next {
+        margin: 0 0 0 4px;
+      }
+
+      &__prev:hover,
+      &__next:hover {
+        border: 2px solid #c7b299;
+        color: #c7b299;
+      }
+
+      &__prev:active,
+      &__next:active {
+        border: 2px solid #d1d1d1;
+        color: #d1d1d1;
+      }
+
+      &__prev:before {
+        content: "<";
+      }
+
+      &__next:before {
+        content: ">";
+      }
+    }
+  }
+}

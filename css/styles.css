@@ -884,6 +884,7 @@ body {
   min-height: 50px;
   border-radius: 3px;
   background-color: #998675;
+  border: solid 1px #998675;
   box-sizing: border-box;
   font-family: Raleway;
   font-size: 14px;
@@ -899,7 +900,6 @@ body {
 }
 .main__projects__btn__link:hover {
   color: #998675;
-  border: solid 1px #998675;
   background-color: transparent;
 }
 .main__projects__btn__link:active {
@@ -920,7 +920,7 @@ body {
 }
 .main__video__wrp {
   position: absolute;
-  top: 0;
+  top: 210px;
   left: 0;
   width: 100%;
   text-align: center;
@@ -928,8 +928,13 @@ body {
 .main__video__wrp__play__svg {
   fill: #fff;
   border-radius: 50%;
-  opacity: 0.2;
-  background-color: #000;
+  opacity: 1;
+  background-color: #00000020;
+  margin: 0 0 44px;
+  box-shadow: 0 0 0 15px #10101050;
+}
+.main__video__wrp__play__svg:hover {
+  fill: #c7b299;
 }
 .main__video__wrp__title {
   color: #fff;
@@ -943,6 +948,7 @@ body {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+  margin: 0 0 29px;
 }
 .main__video__wrp__text {
   font-family: Montserrat;
@@ -954,6 +960,9 @@ body {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+  box-sizing: border-box;
+  padding: 0 650px;
+  margin: 0 0 40px;
 }
 .main__video__wrp__time {
   font-family: Montserrat;
@@ -972,9 +981,13 @@ body {
   left: 0;
 }
 .main__video__source {
+  position: absolute;
+  top: 0;
+  left: 0;
   object-position: center;
   background-size: cover;
   object-fit: cover;
+  overflow: hidden;
 }
 .main__mobile {
   width: 100%;

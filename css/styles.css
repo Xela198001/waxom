@@ -343,6 +343,7 @@ body {
   align-items: center;
   min-width: 100px;
   padding: 0 223px;
+  position: relative;
 }
 .header__nav__logo {
   display: flex;
@@ -425,6 +426,55 @@ body {
 .header__nav__cart__link:active,
 .header__nav__search__link:active {
   color: #fff;
+}
+.header__nav__form {
+  position: relative;
+}
+.header__nav__form__lable {
+  cursor: pointer;
+}
+.header__nav__form__lable:hover {
+  color: #c7b299;
+}
+.header__nav__form__lable:active {
+  color: #fff;
+}
+.header__nav__form__lable__svg {
+  fill: currentColor;
+}
+.header__nav__form__search {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  opacity: 0;
+  width: 1px;
+  min-height: 0px;
+  outline: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  padding-left: 10px;
+  color: #c7b299;
+  border: 1px solid #c7b299;
+  background-color: #c7b299b0;
+  cursor: alias;
+}
+.header__nav__form__search:hover {
+  background-color: #c7b29940;
+}
+.header__nav__form__search:focus {
+  opacity: 1;
+  background-color: #c7b29940;
+  cursor: auto;
+  width: 300px;
+  min-height: 50px;
+  -webkit-transition: width 1s ease-out;
+  -moz-transition: width 1s ease-out;
+  -o-transition: width 1s ease-out;
+  transition: width 1s ease-out;
+  background-position: left;
 }
 .header__slider {
   display: flex;

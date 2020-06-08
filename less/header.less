@@ -26,6 +26,7 @@ body {
     .flexbox(row, space-between, center);
     min-width: 100px;
     padding: 0 223px;
+    position: relative;
 
     &__logo {
       display: flex;
@@ -106,9 +107,9 @@ body {
       margin: 0 15px 0 48px;
     }
 
-    &__cart__link, &__search__link {
+    &__cart__link,
+    &__search__link {
       color: #fff;
-
       &__svg {
         fill: currentColor;
       }
@@ -120,6 +121,63 @@ body {
       &:active {
         color: #fff;
       }
+    }
+
+    &__form {
+      position: relative;
+
+      &__lable {
+        cursor: pointer;
+
+        &:hover {
+          color: #c7b299;
+        }
+
+        &:active {
+          color: #fff;
+        }
+      }
+
+      &__lable__svg {
+        fill: currentColor;
+      }
+    }
+
+    &__form__search {
+      position: absolute;
+      top: 35px;
+      right: 0;
+      opacity: 0;
+      width: 1px;
+      min-height: 0px;
+      outline: none;
+      border-radius: 5px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 16px;
+      padding-left: 10px;
+      color: #c7b299;
+      border: 1px solid #c7b299;
+      background-color: #c7b299b0;
+      cursor: alias;
+    }
+
+    &__form__search:hover {
+      background-color: #c7b29940;
+    }
+
+    &__form__search:focus {
+      opacity: 1;
+      background-color: #c7b29940;
+      cursor: auto;
+      width: 300px;
+      min-height: 50px;
+      -webkit-transition: width 1s ease-out;
+      -moz-transition: width 1s ease-out;
+      -o-transition: width 1s ease-out;
+      transition: width 1s ease-out;
+      background-position: left;
     }
   }
 

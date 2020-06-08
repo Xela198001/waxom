@@ -976,6 +976,9 @@ body {
 .main__projects__wrap__card:hover .main__projects__wrap__card__lupa {
   display: block;
 }
+.main__projects__wrap__card:hover {
+  transform: translateY(-10px);
+}
 .main__projects__btn {
   width: 100%;
 }
@@ -1374,6 +1377,9 @@ body {
 }
 .main__posts__card:hover .main__posts__card__link {
   color: #c7b299;
+}
+.main__posts__card:hover {
+  transform: translateY(-10px);
 }
 .main__posts__card:hover .main__posts__card__number {
   z-index: 4;

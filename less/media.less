@@ -1,7 +1,7 @@
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 576px) {
   @widthBody-md: 100%;
   body {
-    width: 768px;
+    width: 100%;
   }
 
   // .main {
@@ -21,64 +21,185 @@
     display: none;
   }
 
-.main__services {
-  flex-wrap: wrap;
-  padding: 10px;
-}
+  .main__services {
+    flex-wrap: wrap;
+    padding: 20px 10px 10px 10px;
 
-.main__ideas {
-  //  .section__page();
-  .padding-page(10px, 10px, 0, 10px);
-  width: @widthBody-md;
-}
-
-.main__wp-theme {
-  .padding-page(10px, 10px, 0, 10px);
-  width: @widthBody-md;
-}
-
-.main__projects {
-  .padding-page(10px, 10px, 0, 10px);
-  width: @widthBody-md;
-
-  &__wrap {
-    justify-content: center;
-
-    &__card {
-      margin: 0 30px 30px 30px;
+    &__item {
+      margin: 0 auto 20px auto !important;
     }
   }
-}
 
-.main__video {
-  .padding-page(10px, 10px, 0, 10px);
-  width: @widthBody-md;
-}
+  .main__ideas {
+    //  .section__page();
+    .padding-page(30px, 10px, 0, 10px);
+    width: @widthBody-sm;
+    min-height: 150px;
 
-.main__mobile {
-  .padding-page(10px, 10px, 0, 10px);
-  width: @widthBody-md;
-}
+    &__title {
+      font-size: 24px;
+    }
 
-.main__statistics {
-  .padding-page(10px, 10px, 0, 10px);
-  width: @widthBody-md;
-}
+    &__screenshots {
+      display: none;
+    }
 
-.main__posts {
-  .padding-page(10px, 10px, 0, 10px);
-  width: @widthBody-md;
-}
+    &__text {
+      padding: 0 10px;
+    }
+  }
 
-.main__partners {
-  .padding-page(10px, 10px, 0, 10px);
-  width: @widthBody-md;
-}
+  .main__wp-theme {
+    .padding-page(10px, 10px, 0, 10px);
+    width: @widthBody-sm;
+    flex-direction: column;
 
-.footer {
-  .padding-page(10px, 10px, 0, 10px);
-  width: @widthBody-md;
-}
+    &__title {
+      width: 100%;
+    }
 
+    &__text {
+      width: 100%;
+    }
 
+    &__link {
+      margin: 20px 0 0 0;
+    }
+  }
+
+  .main__projects {
+    .padding-page(10px, 10px, 0, 10px);
+    width: @widthBody-sm;
+
+    &__text {
+      padding: 0 10px;
+    }
+
+    &__links {
+      flex-wrap: wrap;
+
+      &__item {
+        margin: 0 20px 20px !important;
+      }
+    }
+
+    &__wrap {
+      justify-content: center;
+
+      &__card {
+        margin: 0 30px 30px 30px;
+      }
+    }
+
+    &__btn {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  .main__video {
+    .padding-page(20px, 10px, 0, 10px);
+    width: @widthBody-sm;
+    min-height: 308px;
+
+    &__wrp {
+      top: 30px;
+
+      &__title {
+        margin: 0 0 10px 0;
+      }
+
+      &__text {
+        padding: 0;
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+
+  .main__mobile {
+    .padding-page(10px, 10px, 0, 10px);
+    width: @widthBody-sm;
+
+    &__img {
+      width: 50%;
+      min-height: 50%;
+      margin: 0;
+    }
+
+    &__wrap {
+      &__text {
+        font-size: 12px;
+      }
+
+      &__list__item {
+        margin: 0 0 0 10px;
+        padding: 0 0 0 55px;
+        font-size: 12px;
+
+        &:before {
+          left: 15px;
+        }
+      }
+    }
+  }
+
+  .main__statistics {
+    .padding-page(20px, 10px, 20px, 10px);
+    width: @widthBody-sm;
+    flex-wrap: wrap;
+
+    &__item {
+      &:nth-last-child(2) {
+        margin: 33.75px 33.75px 0;
+      }
+
+      &:last-child {
+        margin: 33.75px 33.75px 0;
+      }
+      &__number {
+        font-size: 42px;
+      }
+    }
+  }
+
+  .main__posts {
+    .padding-page(10px, 10px, 0, 10px);
+    width: @widthBody-sm;
+
+    &__text {
+      padding: 0;
+    }
+
+    &__arrow {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  .main__partners {
+    .padding-page(10px, 10px, 0, 10px);
+    width: @widthBody-sm;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 20%;
+      min-height: 50%;
+      padding: 10px !important;
+      background-size: cover;
+      overflow: hidden;
+
+      &__img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .footer__links {
+    .padding-page(10px, 10px, 0, 10px);
+    width: @widthBody-sm;
+    align-items: center;
+  }
 }

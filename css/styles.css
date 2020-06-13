@@ -1716,3 +1716,63 @@ body {
 .footer__links__link:hover .footer__links__link:before {
   color: #555;
 }
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  body {
+    width: 768px;
+  }
+  .header {
+    min-height: 100px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__slider {
+    display: none;
+  }
+  .main__services {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .main__ideas {
+    padding: 10px 10px 0 10px;
+    width: 100%;
+  }
+  .main__wp-theme {
+    padding: 10px 10px 0 10px;
+    width: 100%;
+  }
+  .main__projects {
+    padding: 10px 10px 0 10px;
+    width: 100%;
+  }
+  .main__projects__wrap {
+    justify-content: center;
+  }
+  .main__projects__wrap__card {
+    margin: 0 30px 30px 30px;
+  }
+  .main__video {
+    padding: 10px 10px 0 10px;
+    width: 100%;
+  }
+  .main__mobile {
+    padding: 10px 10px 0 10px;
+    width: 100%;
+  }
+  .main__statistics {
+    padding: 10px 10px 0 10px;
+    width: 100%;
+  }
+  .main__posts {
+    padding: 10px 10px 0 10px;
+    width: 100%;
+  }
+  .main__partners {
+    padding: 10px 10px 0 10px;
+    width: 100%;
+  }
+  .footer {
+    padding: 10px 10px 0 10px;
+    width: 100%;
+  }
+}

@@ -663,6 +663,11 @@ body {
   border-radius: 50%;
   margin: 5px;
 }
+.header__slider__pagination__link:hover {
+  background: none;
+  border: 2px solid #ffffff80;
+  box-sizing: border-box;
+}
 .header__slider__pagination__link.link__active {
   width: 15px;
   min-height: 15px;
@@ -988,10 +993,17 @@ body {
   position: absolute;
   top: 106px;
   left: 144px;
+  color: #fff;
   z-index: 10;
 }
 .main__projects__wrap__card__link__svg {
   fill: currentColor;
+}
+.main__projects__wrap__card__link:hover .main__projects__wrap__card__link__svg {
+  color: #c7b299;
+}
+.main__projects__wrap__card__link:active .main__projects__wrap__card__link__svg {
+  color: #fff;
 }
 .main__projects__wrap__card__lupa {
   display: none;
@@ -1001,9 +1013,16 @@ body {
   position: absolute;
   top: 106px;
   left: 198px;
+  color: #fff;
 }
 .main__projects__wrap__card__lupa__svg {
-  fill: #fff;
+  fill: currentColor;
+}
+.main__projects__wrap__card__lupa:hover .main__projects__wrap__card__lupa__svg {
+  color: #c7b299;
+}
+.main__projects__wrap__card__lupa:active .main__projects__wrap__card__lupa__svg {
+  color: #fff;
 }
 .main__projects__wrap__card:hover .main__projects__wrap__card__img {
   filter: brightness(40%);
@@ -1023,7 +1042,6 @@ body {
 }
 .main__projects__wrap__card:hover .main__projects__wrap__card__link {
   display: block;
-  color: #c7b299;
 }
 .main__projects__wrap__card:hover .main__projects__wrap__card__lupa {
   display: block;
@@ -1236,6 +1254,7 @@ body {
 .main__statistics__item__icon {
   display: block;
   margin: 0 auto 30px;
+  fill: #c7b299;
 }
 .main__statistics__item__number {
   font-family: "Montserrat", sans-serif;
@@ -1415,6 +1434,12 @@ body {
   margin: 0 0 0 5px;
   font-size: 14px;
 }
+.main__posts__card__body__link:hover {
+  color: #fff;
+}
+.main__posts__card__body__link:active {
+  color: #c7b299;
+}
 .main__posts__card:hover .main__posts__card__img {
   filter: brightness(40%);
 }
@@ -1593,6 +1618,12 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0 0 0 5px;
   font-size: 14px;
+}
+.footer__waxom__link:hover {
+  color: #c7b299;
+}
+.footer__waxom__link:active {
+  color: #555;
 }
 .footer__posts__title,
 .footer__twitter__title,

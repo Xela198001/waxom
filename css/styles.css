@@ -1865,7 +1865,7 @@ body {
     padding: 0 10px;
   }
   .main__wp-theme {
-    padding: 10px 10px 0 10px;
+    padding: 10px 10px 10px 10px;
     width: 100%;
     flex-direction: column;
   }
@@ -1879,6 +1879,7 @@ body {
   }
   .main__wp-theme__link {
     margin: 20px 0 0 0;
+    align-self: center;
   }
   .main__projects {
     padding: 10px 10px 0 10px;

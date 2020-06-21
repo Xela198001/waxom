@@ -76,6 +76,9 @@ body {
       user-select: none;
 
       &__navicon {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
         background: currentColor;
         display: block;
         height: 2px;
@@ -152,20 +155,20 @@ body {
       }
     }
 
-    &__btn:checked ~ &__icon &__icon__navicon {
+    &__btn:checked ~ &__list &__icon &__icon__navicon {
       background: transparent;
     }
 
-    &__btn:checked ~ &__icon &__icon__navicon:before {
+    &__btn:checked ~ &__list &__icon &__icon__navicon:before {
       transform: rotate(-45deg);
     }
 
-    &__btn:checked ~ &__icon &__icon__navicon:after {
+    &__btn:checked ~ &__list &__icon &__icon__navicon:after {
       transform: rotate(45deg);
     }
 
-    &__btn:checked ~ &__icon:not(.steps) &__icon__navicon:before,
-    &__btn:checked ~ &__icon:not(.steps) &__icon__navicon:after {
+    &__btn:checked ~ &__list &__icon:not(.steps) &__icon__navicon:before,
+    &__btn:checked ~ &__list &__icon:not(.steps) &__icon__navicon:after {
       top: 0;
     }
 

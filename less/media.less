@@ -1,4 +1,7 @@
-@media screen and (max-width: 576px) {
+
+
+
+@media screen and (max-width: 768px) {
   @widthBody-md: 100%;
   body {
     width: 100%;
@@ -23,16 +26,17 @@
     }
 
     &__list {
-      display: none;
-      position: absolute;
-      top: 83px;
-      left: -25px;
-      right: -25px;
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 100%;
+      width: 100%;
+      height: 100vh;
       background-color: #615855;
       margin: 0;
-      z-index: 15;
-      transition: width 1s ease-out;
+      transition: right .4s ;
       background-position: left;
+      z-index: 15;
 
       
 
@@ -45,12 +49,14 @@
           display: block;
           margin: auto;
           text-align: center;
+          font-size: 16px;
+          font-weight: 700;
         }
       }
     }
     &__btn:checked ~ &__list {
-        right: -25px;
-        display: block;
+        right: 0;
+        // display: block;
         
       }
   }
@@ -265,6 +271,27 @@
 
     &__item:nth-child(5) {
       margin: 0 0 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+
+  body {
+    width: 100%;
+  }
+
+.header {
+    min-height: 100px;
+    padding: 25px;
+  }
+
+  .header__nav {
+    // display: none;
+    padding: 0;
+
+    &__icon {
+      display: block;
     }
   }
 }

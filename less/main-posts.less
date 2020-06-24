@@ -15,6 +15,7 @@
       .text();
       width: 100%;
       margin: 0 0 40px;
+      padding: 0 165px;
     }
 
     &__card {
@@ -34,6 +35,44 @@
 
       &:nth-last-child(3) {
         margin: 0 0 30px 15px;
+      }
+
+      &__number {
+        display: block;
+        width: 50px;
+        min-height: 35px;
+        background-color: #363636;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 35px;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 3px 3px 0 0;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+
+      &__month {
+        display: block;
+        width: 50px;
+        min-height: 25px;
+        background-color: #252525;
+        font-family: 'Montserrat', 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 25px;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 0 0 3px 3px;
+        position: absolute;
+        top: 55px;
+        left: 20px;
       }
 
       &__img {
@@ -79,6 +118,14 @@
             margin: 0 0 0 5px;
             font-size: 14px;
           }
+
+          &:hover {
+            color: #fff;
+          }
+
+          &:active {
+            color: #c7b299;
+          }
         }
       }
 
@@ -101,7 +148,21 @@
       &:hover &__link {
         color: #c7b299;
       }
+
+      &:hover {
+        transform: translateY(-10px);
+      }
     }
+
+    &__card:hover &__card__number {
+        z-index: 4;
+        background-color: #c7b299;
+      }
+
+      &__card:hover &__card__month {
+        z-index: 4;
+        background-color: #a48d72;
+      }
 
     &__arrow {
       .flexbox();
@@ -121,7 +182,7 @@
         font-size: 14px;
         text-align: center;
         line-height: 22px;
-        color:#d1d1d1;
+        color: #d1d1d1;
       }
 
       &__prev {
@@ -132,12 +193,14 @@
         margin: 0 0 0 4px;
       }
 
-      &__prev:hover, &__next:hover {
+      &__prev:hover,
+      &__next:hover {
         border: 2px solid #c7b299;
         color: #c7b299;
       }
 
-      &__prev:active, &__next:active {
+      &__prev:active,
+      &__next:active {
         border: 2px solid #d1d1d1;
         color: #d1d1d1;
       }

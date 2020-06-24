@@ -10,17 +10,22 @@
 
     &__wrp {
       position: absolute;
-      top: 0;
+      top: 210px;
       left: 0;
       width: 100%;
-      // min-height: 100%;
       text-align: center;
 
       &__play__svg {
         fill: #fff;
         border-radius: 50%;
-        opacity: 0.2;
-        background-color: #000;
+        opacity: 1;
+        background-color: #00000020;
+        margin: 0 0 44px;
+        box-shadow: 0 0 0 15px #10101050;
+
+        &:hover {
+          fill: #c7b299;
+        }
       }
 
       &__title {
@@ -35,6 +40,7 @@
         letter-spacing: normal;
         text-align: center;
         color: #ffffff;
+        margin: 0 0 29px;
       }
 
       &__text {
@@ -47,6 +53,9 @@
         letter-spacing: normal;
         text-align: center;
         color: #ffffff;
+        box-sizing: border-box;
+        padding: 0 650px;
+        margin: 0 0 40px;
       }
 
       &__time {
@@ -68,9 +77,13 @@
     }
 
     &__source {
+      position: absolute;
+      top: 0;
+      left: 0;
       object-position: center;
       background-size: cover;
       object-fit: cover;
+      overflow: hidden;
     }
   }
 }

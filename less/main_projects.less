@@ -135,10 +135,19 @@
           position: absolute;
           top: 106px;
           left: 144px;
+          color: #fff;
           z-index: 10;
 
           &__svg {
             fill: currentColor;
+          }
+
+          &:hover &__svg {
+            color: #c7b299;
+          }
+
+          &:active &__svg {
+            color: #fff;
           }
         }
 
@@ -151,9 +160,18 @@
           position: absolute;
           top: 106px;
           left: 198px;
+          color: #fff;
 
            &__svg {
-            fill: #fff;
+            fill: currentColor;
+          }
+
+          &:hover &__svg {
+            color: #c7b299;
+          }
+
+          &:active &__svg {
+            color: #fff;
           }
           
         }
@@ -181,12 +199,15 @@
 
         &:hover &__link {
           display: block;
-          color: #c7b299;
         }
 
         &:hover &__lupa {
           display: block;
         }
+
+        &:hover {
+        transform: translateY(-10px);
+      }
       }
     }
 
@@ -198,6 +219,7 @@
         min-height: 50px;
         border-radius: 3px;
         background-color: #998675;
+        border: solid 1px #998675;
         box-sizing: border-box;
         font-family: Raleway;
         font-size: 14px;
@@ -213,7 +235,6 @@
 
         &:hover {
           color: #998675;
-          border: solid 1px #998675;
           background-color: transparent;
         }
 
